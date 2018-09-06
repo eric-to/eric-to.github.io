@@ -57,3 +57,17 @@ Let's consolidate what we have so far:
 
 ## Explanation
 
+To rephrase the problem given our new understanding of factors: we want to find all the unique `(x, y)` pairs such that `x * y = n`.
+
+Looking at `x * y = n` doesn't tell us much. But what if we set `x = y`. Then we have a special relationship. If `x = y` then `x` and `y` are the square root of `n`. What happens if you increase `x`? If you increase `x`, `x * y` becomes bigger than `n`. What happens if you decrease `x`? `x * y` becomes smaller than `n`. What this means is that either `x` or `y` will **always** be `<= sqrt(n)`.
+
+The two factors will only be equal if they are equal to `sqrt(n)`, otherwise one factor will always be bigger and the other one smaller. This means that we can get away with iterating only `sqrt(n)` times! We can basically look for all the "smaller" factors, i.e. factors that are less than `sqrt(n)` and calculate the bigger factor. Here's the code:
+
+```
+from functools import reduce
+
+def factors(n):    
+    return set(reduce(list.__add__, 
+                ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0)))
+```
+
