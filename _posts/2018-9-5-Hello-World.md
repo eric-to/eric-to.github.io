@@ -15,4 +15,11 @@ First, let's define a factor. A factor of a number `n` is `i` if `i` divides `n`
 
 ## Pseudocode
 
-Let's
+Let's get to drafting a solution. Having defined what a factor is, how do we obtain all of the factors for a number `n`? We can start with a simple example. Let `n = 24`. From the top of our heads, we know all the factors of `24` are: `1, 2, 3, 4, 6, 8, 12, 24`. We can confirm that this is the case by going through all the numbers between `1` and `24` and checking to see whether they divide `24` without leaving a remainder. But how do we do this for bigger numbers?
+
+Programmatically, for an arbitrarily high `n`, we can check all the numbers in the range of `1` to `n` since any factor of `n` must be included in this range, i.e. a factor of `n` cannot be less than `1` and it cannot be greater than `n`. So, just to reiterate, here's what we have so far:
+
+	* something
+    * something
+
+something
