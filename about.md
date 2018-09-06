@@ -5,11 +5,11 @@ permalink: /about/
 published: true
 ---
 
-Going to write something here later &#58p
+Going to write something here later :P
 
 ### More Information
 
-&#126 Placeholder &#126
+~ Placeholder ~
 
 ### Contact me
 
