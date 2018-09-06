@@ -26,11 +26,11 @@ Programmatically, for an arbitrarily high `n`, we can check all the numbers in t
 A reasonable approach here, in coding terms now, would be to iterate through the range of `1` to `n`, i.e. `range(1, n + 1)` and check if `n % i == 0` for every number `i` in this range. Let's write this out:
 
 ~~~
-# Given a number n, factors(n) will return a list containing all of the factors of n
-def getFactors(n):
-	factors = []
-    for i in range(1, n + 1): # we use n + 1 because range() does not include the upper bound
-    	if n % i == 0:
-        	factors.append(i)
-    return factors
+    # Given a number n, factors(n) will return a list containing all of the factors of n
+    def getFactors(n):
+	    factors = []
+        for i in range(1, n + 1): # we use n + 1 because range() does not include the upper bound
+    	    if n % i == 0:
+        	    factors.append(i)
+        return factors
 ~~~
