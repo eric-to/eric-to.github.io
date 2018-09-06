@@ -81,4 +81,4 @@ def factors(n):
                 ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0)))
 ```
 
-Our `for` loop only runs `sqrt(n)` times now, thus the runtime is *O(sqrt(n))*. This runs blazingly fast even when `n` is very large (just look at a `y = x` vs `y = sqrt(x)` graph).
+Our `for` loop only runs `sqrt(n)` times now, thus the runtime is *O(sqrt(n))*. This runs blazingly fast even when `n` is very large (just look at a `y = x` vs `y = sqrt(x)` graph). You might be thinking: But there's more stuff inside the `for` loop. For larger input, this is negligible compared to the sheer number of values the program checks originally. Imagine doing a set of work `n` times versus doing a set of work `sqrt(n)` times.
