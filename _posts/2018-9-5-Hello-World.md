@@ -51,4 +51,9 @@ A factor is a number `x` such that `n % x == 0`. This means that there is anothe
 
 Let's consolidate what we have so far:
 
-1. 
+1. So far, we figured out that we only need to check `n / 2` values at most for factors.
+2. But we can do better because we also figured out that for every factor we find, we can calculate an accompanying factor.
+3. We need to figure out a way to iterate only `x / 2` times where `x` is the number of factors since we only need to find `x / 2` factors to calculate the rest.
+
+## Explanation
+
