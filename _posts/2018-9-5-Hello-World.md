@@ -21,4 +21,5 @@ Programmatically, for an arbitrarily high `n`, we can check all the numbers in t
 
 	1. We want to find all of the factors for a number `n`.
     2. By definition of a factor, any factor of `n` must be in the range of `1` to `n`.
-    3. 
+    3. To determine whether a number `i` in this range is a factor of `n`, we need to check if `n % i == 0`
+
