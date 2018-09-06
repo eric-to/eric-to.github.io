@@ -13,6 +13,6 @@ The first problem I want to talk about is a simple one: What's the most efficien
 First, let's define a factor. A factor of a number `n` is `i` if `i` divides `n` without leaving a remainder. That is, if `n % i == 0` we say that `i` is a factor of `n`.
 
 
-##Pseudocode
+## Pseudocode
 
 Let's
