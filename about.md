@@ -2,14 +2,15 @@
 layout: page
 title: About
 permalink: /about/
+published: true
 ---
 
-Some information about you!
+Going to write something here later &#58p
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+&#126 Placeholder &#126
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+erto@berkeley.edu
