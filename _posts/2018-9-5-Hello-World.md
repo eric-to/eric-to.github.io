@@ -11,3 +11,8 @@ I wanted to start this blog because my friend was asking me how to solve coding 
 The first problem I want to talk about is a simple one: What's the most efficient way to find all the factors of a number? For this problem, I'll use Python 3.0.
 
 First, let's define a factor. A factor of a number `n` is `i` if `i` divides `n` without leaving a remainder. That is, if `n % i == 0` we say that `i` is a factor of `n`.
+
+
+##Pseudocode
+
+Let's
