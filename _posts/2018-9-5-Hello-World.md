@@ -66,8 +66,19 @@ The two factors will only be equal if they are equal to `sqrt(n)`, otherwise one
 ``` python
 from functools import reduce
 
+# less elegant
+def factors(n):
+    fList = []
+    for i in range(1, int(n ** 0.5 + 1)):
+    	if n % i == 0:
+        	fList.append(int(i))
+            fList.append(int(n / i))
+    return set(fList)
+
+# more elegant
 def factors(n):    
     return set(reduce(list.__add__, 
                 ([i, n//i] for i in range(1, int(n**0.5) + 1) if n % i == 0)))
 ```
 
+Our `for` loop only runs `sqrt(n)` times now, thus the runtime is *O(sqrt(n))*. This runs blazingly fast even when `n` is very large (just look at a `y = x` vs `y = sqrt(x)` graph).
