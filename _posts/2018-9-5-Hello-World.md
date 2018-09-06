@@ -63,7 +63,7 @@ Looking at `x * y = n` doesn't tell us much. But what if we set `x = y`. Then we
 
 The two factors will only be equal if they are equal to `sqrt(n)`, otherwise one factor will always be bigger and the other one smaller. This means that we can get away with iterating only `sqrt(n)` times! We can basically look for all the "smaller" factors, i.e. factors that are less than `sqrt(n)` and calculate the bigger factor. Here's the code:
 
-```
+``` python
 from functools import reduce
 
 def factors(n):    
