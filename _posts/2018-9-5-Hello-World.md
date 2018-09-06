@@ -23,4 +23,9 @@ Programmatically, for an arbitrarily high `n`, we can check all the numbers in t
 2. By definition of a factor, any factor of `n` must be in the range of `1` to `n`.
 3. To determine whether a number `i` in this range is a factor of `n`, we need to check if `n % i == 0`
 
-A reasonable approach here, in coding terms now, would be to iterate through the range of `1` to `n`, i.e. `range(1, n + 1)` and check if `n % i == 0` for every number `i` in this range.
+A reasonable approach here, in coding terms now, would be to iterate through the range of `1` to `n`, i.e. `range(1, n + 1)` and check if `n % i == 0` for every number `i` in this range. Let's write this out:
+
+~~~
+# Given a number n, factors(n) will return a list containing all of the factors of n
+def factors(n):
+~~~
