@@ -35,4 +35,4 @@ def getFactors(n):
     return factors
 ```
 
-Great! We have a working solution.
+Great! We have a working solution. But how fast is it?
