@@ -46,3 +46,9 @@ Not quite. Consider an input `n`. Is `n - 1` a factor of `n`? No. Is `n - 2` a f
 ## Optimizing
 
 It might not seem obvious at first (or at all), but we can make a much better improvement to the program. Consider our very first example, `n = 24`. Its factors are `1, 2, 3, 4, 6, 8, 12, 24`. Can we detect anything else here that might help us? In most cases, recognizing a pattern is what leads us to make optimizations to our programs.
+
+A factor is a number `x` such that `n % x == 0`. This means that there is another factor `y` such that `x * y = n`. If we find one factor, we can always calculate the other factor simply by dividing `n` by the first factor. For example, if `n = 24`, the second factor we find is `2`. We can calculate a second factor by `24 / 2 = 12`. So, now we know that we can find two factors simultaneously. But how do we implement this?
+
+Let's consolidate what we have so far:
+
+1. 
