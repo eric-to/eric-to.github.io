@@ -19,8 +19,8 @@ Let's get to drafting a solution. Having defined what a factor is, how do we obt
 
 Programmatically, for an arbitrarily high `n`, we can check all the numbers in the range of `1` to `n` since any factor of `n` must be included in this range, i.e. a factor of `n` cannot be less than `1` and it cannot be greater than `n`. So, just to reiterate, here's what we have so far:
 
-	1. We want to find all of the factors for a number `n`.
-    2. By definition of a factor, any factor of `n` must be in the range of `1` to `n`.
-    3. To determine whether a number `i` in this range is a factor of `n`, we need to check if `n % i == 0`
+1. We want to find all of the factors for a number `n`.
+2. By definition of a factor, any factor of `n` must be in the range of `1` to `n`.
+3. To determine whether a number `i` in this range is a factor of `n`, we need to check if `n % i == 0`
 
-(^Not sure why markdown did that^) A reasonable approach here, in coding terms now, would be to iterate through the range of `1` to `n`, i.e. `range(1, n + 1)` and check if `n % i == 0` for every number `i` in this range.
+A reasonable approach here, in coding terms now, would be to iterate through the range of `1` to `n`, i.e. `range(1, n + 1)` and check if `n % i == 0` for every number `i` in this range.
